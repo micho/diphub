@@ -1,0 +1,64 @@
+.row.splash
+  margin-top: 20px
+  margin-bottom: 30px
+
+  .big_logo
+    p, h1
+      margin: 0
+      padding: 0
+    p
+      font-size: 40px
+      font-weight: bold
+      line-height: 50px
+      span
+        font-weight: normal
+    h1
+      font-weight: normal
+      font-style: italic
+      font-size: 15px
+      color: #555
+      line-height: 16px
+
+  .signup_box
+    text-align: center
+    background: #ff0
+    padding: 12px 0 6px
+    border: 1px solid #ccc
+    @include box-shadow(#ccc 1px 1px 4px)
+    @include background-image(linear-gradient(top, #ffe, #ffc))
+    p.title
+      font-weight: bold
+      font-size: 14px
+
+  .taglines
+    text-align: center
+    ul
+      margin-top: 15px
+      font-size: 16px
+      list-style: none
+      li
+        height: 24px
+
+.row.reasons
+  margin-top: 50px
+  i
+    position: relative
+    top: 4px
+  p.subh3
+    color: #555
+    font-style: italic
+
+.row.navigation
+  margin-top: 10px
+  padding-top: 10px
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #bbb
+  text-align: center
+  li
+    list-style: none
+    display: inline-block
+    margin: 0 10px
+    &.active
+      font-weight: bold
+      a
+        color: black
