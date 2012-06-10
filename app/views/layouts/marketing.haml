@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title diphub
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .container
+      .row.splash
+        .span3.offset1.big_logo
+          %p dip<span>hub</span>
+          %h1 "github for recipes"
+        .span4.signup_box
+          %p.title Organize and share recipes you love.
+          %p
+            %a.btn.btn-primary
+              Start your own cookbook
+            or
+            %a.btn
+              Login
+        .span3.taglines
+          %ul.points
+            %li <strong>discover</strong> new dishes and
+            %li build <strong>your own cookbook</strong>
+      = yield
+

@@ -7,21 +7,14 @@
     = csrf_meta_tags
   %body
     .container
-      .row.splash
-        .span3.offset1.big_logo
-          %p dip<span>hub</span>
-          %h1 "github for recipes"
-        .span4.signup_box
-          %p.title Organize and share recipes you love.
-          %p
-            %a.btn.btn-primary
-              Start your own cookbook
-            or
-            %a.btn
-              Login
-        .span3.taglines
-          %ul.points
-            %li <strong>discover</strong> new dishes and
-            %li build <strong>your own cookbook</strong>
+      .row.header
+        .span3.offset1.logo
+          dip<span>hub</span>
+        .span7
+          &nbsp;
+        .span1
+          %a.btn
+            Login
+      .clear
       = yield
 
