@@ -8,13 +8,16 @@
   %body
     .container
       .row.header
-        .span3.offset1.logo
-          dip<span>hub</span>
-        .span7
-          &nbsp;
-        .span1
+        .span3.logo
+          %a{ :href => "/" }
+            dip<span>hub</span>
+        .span5.tagline
+          Organize and share recipes you love.
+        .span4.buttons
+          %a.btn.btn-primary
+            Create your own cookbook
           %a.btn
             Login
-      .clear
+        .clear
       = yield
 

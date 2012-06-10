@@ -9,15 +9,22 @@ body
 
 .row.header
   .logo
-    font-size: 18px
+    margin-top: 4px
+    font-size: 24px
     font-weight: bold
     span
       font-weight: normal
+    a
+      color: #333
+  .tagline
+    text-align: center
+    background: #ff0
+    border: 1px solid #ccc inside
+    padding: 5px 0
+    @include box-shadow(#ccc 1px 1px 4px)
+    @include background-image(linear-gradient(top, #ffe, #ffc))
+    font-weight: bold
+    font-size: 14px
+  .buttons
+    text-align: right
 
-.btn
-  -webkit-box-shadow: none
-  -moz-box-shadow: none
-  box-shadow: none
-  font-family: Helvetica,arial,freesans,clean,sans-serif
-  font-weight: bold
-  background-image: none !important

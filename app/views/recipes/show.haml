@@ -1,1 +1,67 @@
-.row
+.row.recipe
+  .span3.user
+    %p
+      = link_to "Thor", "/thor"
+    %a{ :href => "/thor" }
+      %img{ :src => "http://cl.ly/07041I352S2P2c0K3V3f/content#.png", :style => "max-width: 100%" }
+    .box
+      %ul
+        %li
+          %a{ :href => "" }
+            Main courses
+          %span.badge 5
+        %li
+          %a{ :href => "" }
+            Drinks
+          %span.badge 2
+        %li
+          %a{ :href => "" }
+            Desserts
+          %span.badge 1
+        %li
+          %a{ :href => "" }
+            Sauces
+          %span.badge 1
+        %li.divider
+        %li
+          %a{ :href => "" }
+            Recipes I liked
+          %span.badge 13
+
+  .span9.recipe
+    .box
+      .row.head
+        .span6{ :style => "width: 440px" }
+          %h1 Triple chocolate cream
+          %p A guilty pleasure to enjoy as a dessert or a delicious tea time sweet. Share it with your friends and family!
+        .span3.extra
+          %p
+            Under
+            = link_to("Desserts") + "."
+            Posted 8 days ago.
+          %p
+            Recipe from
+            = link_to("seriouseats.com")
+      .row.actions
+        .span8
+          %a.btn
+            %i.icon-plus
+            Save to my Cookbook
+          %a.btn
+            %i.icon-envelope
+            Share with a friend
+          %a.btn
+            %i.icon-heart
+            Like
+      .row.body
+        .span3
+          %h2 Ingredients
+          %ul
+            %li 1 lb. chocolate powder
+            %li Vanilla (use only original vanilla extract from plans, avoid artificially produced vanilla flavorings)
+            %li 2 cups white sugar
+            %li 1 cup of milk
+            %li 1 stick of butter
+        .span6{ :style => "width: 440px" }
+          %img{ :src => "http://media-cache-ec7.pinterest.com/upload/151081762469873231_gzSTOxCp_f.jpg" }
+  .clear

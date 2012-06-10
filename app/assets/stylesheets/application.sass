@@ -1,8 +1,31 @@
 @import compass
 
-@import _reset
-@import _layout
-@import _bootstrap
+@import reset
+@import layout
+@import bootstrap
 
-@import _home
-@import _explore
+@import home
+@import explore
+@import recipe
+
+// Overwrite buttons for more personality
+.btn
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  font-family: Helvetica,arial,freesans,clean,sans-serif
+  font-weight: bold
+  background-image: none !important
+
+
+.box
+  background: white
+  padding: 10px
+  margin: 10px 0
+  @include box-shadow(#777 1px 1px 4px)
+  img
+    display: block
+    margin: 0 auto
+
+img
+  max-width: 100%
