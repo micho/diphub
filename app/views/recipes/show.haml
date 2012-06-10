@@ -4,6 +4,12 @@
       = link_to "Thor", "/thor"
     %a{ :href => "/thor" }
       %img{ :src => "http://cl.ly/07041I352S2P2c0K3V3f/content#.png", :style => "max-width: 100%" }
+
+    .follow
+      %a.btn{ :href => "" }
+        %i.icon-eye-open
+        Follow Thor's recipes
+
     .box
       %ul
         %li
@@ -35,10 +41,22 @@
           %h1 Triple chocolate cream
           %p A guilty pleasure to enjoy as a dessert or a delicious tea time sweet. Share it with your friends and family!
         .span3.extra
+          .stats
+            %span{ :href => "", :rel => "tooltip", :title => "Comments from people who cooked this recipe" }
+              %i.icon-comment
+              %a{ :href => "" }
+                2
+            %span{ :rel => "tooltip", :title => "See who liked this recipe" }
+              %i.icon-heart
+              %a{ :href => "" }
+                6
+            %span{ :rel => "tooltip", :title => "2 people made their own version of this recipe" }
+              %i.icon-random
+              %a{ :href => "" }
+                2
           %p
-            Under
-            = link_to("Desserts") + "."
-            Posted 8 days ago.
+            Posted 8 days ago under
+            = link_to("Desserts")
           %p
             Recipe from
             = link_to("seriouseats.com")
@@ -55,7 +73,7 @@
             Like
           %a.btn{ :rel => "tooltip", :title => "Modify this recipe and<br>make your own version" }
             %i.icon-random
-            Fork
+            Make my own version
       .row.body
         .span3
           %h2 Ingredients
@@ -67,4 +85,9 @@
             %li 1 stick of butter
         .span6{ :style => "width: 440px" }
           %img{ :src => "http://media-cache-ec7.pinterest.com/upload/151081762469873231_gzSTOxCp_f.jpg" }
+      .row.full
+        .span9
+          %h2 Directions
+          %p First, ...
+
   .clear

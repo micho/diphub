@@ -15,5 +15,5 @@
 //= require_tree .
 
 $(function () {
-  $("a[rel=tooltip]").tooltip();
+  $("[rel=tooltip]").tooltip();
 });

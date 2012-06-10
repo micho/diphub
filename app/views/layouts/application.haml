@@ -6,18 +6,20 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    .page-header
+      .container
+        .row.header
+          .span3.logo
+            %a{ :href => "/" }
+              dip<span>hub</span>
+          .span5.tagline
+            Organize and share recipes you love.
+          .span4.buttons
+            %a.btn.btn-primary
+              Create your own cookbook
+            %a.btn
+              Login
+          .clear
     .container
-      .row.header
-        .span3.logo
-          %a{ :href => "/" }
-            dip<span>hub</span>
-        .span5.tagline
-          Organize and share recipes you love.
-        .span4.buttons
-          %a.btn.btn-primary
-            Create your own cookbook
-          %a.btn
-            Login
-        .clear
       = yield
 
