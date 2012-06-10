@@ -6,32 +6,48 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container_12.splash
-      .grid_3
-        .big_logo
-          dip<span>hub</span>
-        %p.sub_logo "github for recipes"
-      .grid_6
-        %ul.points
-          %li <strong>discover</strong> new dishes
-          %li <strong>build</strong> your cookbook
-          %li <strong>share</strong> your creations
-      .grid_3
-        Sign up
-    - if false
-      .container_12
-        .grid_2
-          .logo
-            dip<span>hub</span>
-        .grid_10
-      .clear
-      .container_12.main
-        .grid_2
-          %ul
-            %li.title Recipes
-            %li Lol
-            %li Lol
-        .grid_10
-          = yield
-      .clear
+    .container
+      .row.splash
+        .span3.offset1.big_logo
+          %p dip<span>hub</span>
+          %h1 "github for recipes"
+        .span4.signup_box
+          %p Organize recipes you love.
+          %p
+            %a.btn.btn-primary
+              Start your own cookbook
+            or
+            %a.btn
+              Login
+        .span3.taglines
+          %ul.points
+            %li <strong>discover</strong> new dishes and
+            %li build <strong>your own cookbook</strong>
+            -#%li <strong>share</strong> your creations
+
+      .row.reasons
+        .span4
+          %h3
+            %i.icon-user
+            Social cooking
+          %p.subh3
+            "What's your secret for these cookies?"
+          %p
+            Share recipes, add your variations and comments for your friend's recipes!
+        .span4
+          %h3
+            %i.icon-glass
+            A world of recipes
+          %p.subh3
+            "What's an easy mexican main course?"
+          %p
+            Discover great new recipes from people like you.
+        .span4
+          %h3
+            %i.icon-book
+            Your cookbook, anywhere
+          %p.subh3
+            On the go, or simply away from the screen?
+          %p
+            Access your cookbook online with your phone!
 
