@@ -25,7 +25,7 @@
         %li.divider
         %li
           %a{ :href => "" }
-            Recipes I liked
+            Other recipes liked
           %span.badge 13
 
   .span9.recipe
@@ -44,15 +44,18 @@
             = link_to("seriouseats.com")
       .row.actions
         .span8
-          %a.btn
+          %a.btn{ :rel => "tooltip", :title => "Save to your collection of recipes.<br>It will appear in your profile." }
             %i.icon-plus
             Save to my Cookbook
-          %a.btn
+          %a.btn{ :rel => "tooltip", :title => "Send a link by email" }
             %i.icon-envelope
             Share with a friend
-          %a.btn
+          %a.btn{ :rel => "tooltip", :title => "Love this recipe? Vote for it!" }
             %i.icon-heart
             Like
+          %a.btn{ :rel => "tooltip", :title => "Modify this recipe and<br>make your own version" }
+            %i.icon-random
+            Fork
       .row.body
         .span3
           %h2 Ingredients
