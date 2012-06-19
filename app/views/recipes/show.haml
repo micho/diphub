@@ -1,5 +1,5 @@
-.row.recipe
-  .span3.user
+.row.recipe_section
+  .span3.user_sidebar
     %p
       = link_to "Thor", "/thor"
     %a{ :href => "/thor" }
@@ -10,29 +10,7 @@
         %i.icon-eye-open
         Follow Thor's recipes
 
-    .box
-      %ul
-        %li
-          %a{ :href => "" }
-            Main courses
-          %span.badge 5
-        %li
-          %a{ :href => "" }
-            Drinks
-          %span.badge 2
-        %li
-          %a{ :href => "" }
-            Desserts
-          %span.badge 1
-        %li
-          %a{ :href => "" }
-            Sauces
-          %span.badge 1
-        %li.divider
-        %li
-          %a{ :href => "" }
-            Other recipes liked
-          %span.badge 13
+    = render 'user_navigation'
 
   .span9.recipe
     .box

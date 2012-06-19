@@ -1,0 +1,22 @@
+.row.new_recipe
+  .span9.new_recipe_section
+    .box
+      .row
+        .span9{ :style => "width: 440px" }
+          %h1 Post a new recipe
+          %form
+            %label Name:
+            %input.name.span5{ :type => "text", :placeholder => "For example, Hazelnut Cookies" }
+
+            %label Short description:
+            %input.span5{ :type => "text", :placeholder => "What makes it special?" }
+
+            %label Ingredients:
+            %textarea.with_guides.span5{ :rows => "8", :placeholder => "Write one ingredient per line" }
+
+            %label Directions:
+            %textarea.span5{ :rows => "8", :placeholder => "Write one ingredient per line" }
+  .span3
+    .box
+
+  .clear
